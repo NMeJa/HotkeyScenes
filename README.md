@@ -1,7 +1,7 @@
 # Hotkey Scenes Switcher
 [![Unity 2020.3+](https://img.shields.io/badge/unity-2020.3%2B-blue.svg)](https://unity3d.com/get-unity/download)
 [![openupm](https://img.shields.io/npm/v/com.nmj.hotkeyscene?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.nmj.hotkeyscene/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/NMeJa/HotkeyScenes/LICENSE.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/NMeJa/HotkeyScenes/blob/master/LICENSE.md)
 
 You can use "Shift + Number" (0-9) in the upper part of the keyboard to quickly change between Scenes!
 
