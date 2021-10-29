@@ -21,4 +21,5 @@ openupm add com.nmj.hotkeyscene
 ```
 3. You can also use package manager and add package from github
 ``` 
-add from github and past: https://github.com/NMeJa/HotkeyScenes.git
+https://github.com/NMeJa/HotkeyScenes.git
+```
