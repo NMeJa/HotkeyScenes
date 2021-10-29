@@ -19,7 +19,7 @@ openupm add com.nmj.hotkeyscene
 ```
 "com.nmj.hotkeyscene": "https://github.com/NMeJa/HotkeyScenes.git"
 ```
-3. You can also use package manager and add package from github
+3. You can also use **Package Manager** and add package from there. In Package Manager press **+** In upper left corner and on drop down select "Add package From git URL..".
 ``` 
 https://github.com/NMeJa/HotkeyScenes.git
 ```
