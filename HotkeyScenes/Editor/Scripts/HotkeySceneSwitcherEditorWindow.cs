@@ -89,7 +89,8 @@ namespace NMJ.HotkeyScenes
         {
             if (Data.HotkeySceneAssets.Length < 1) return;
             if (scene is null) return;
-            EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
+            bool hasSaved = EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
+            if (!hasSaved) return;
             string scenePath = AssetDatabase.GetAssetOrScenePath(scene);
             if (string.IsNullOrEmpty(scenePath)) return;
             EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Single);
