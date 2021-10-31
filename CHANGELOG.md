@@ -13,4 +13,4 @@ Initial release of the tool.
 Fixed BUG!
 
 ### Fixed
-Fixed Bug. When asking for saving scene changes if pressed cancel it would still go to the different scene. 
+Fixed Bug. When asking for saving scene changes if pressed cancel it would still go to the different scene.
