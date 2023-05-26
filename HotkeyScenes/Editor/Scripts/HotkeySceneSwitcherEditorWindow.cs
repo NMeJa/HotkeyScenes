@@ -47,46 +47,48 @@ namespace NMJ.HotkeyScenes
 
         #region Open Menu
 
-        [MenuItem(cMenuPath + "Edit #e")]
+        [MenuItem(cMenuPath + "Edit %#e")]
         private static void OpenWindow()
         {
+            if (EditorApplication.isPlaying) return;
             var wnd = GetWindow<HotkeySceneSwitcherEditorWindow>();
             wnd.titleContent = new GUIContent("Hotkey Scenes");
             wnd.Show();
         }
 
-        [MenuItem(cMenuPath + "Scene 0 #0")]
+        [MenuItem(cMenuPath + "Scene 0 %#0")]
         private static void OpenScene0() => LoadScene(Data.HotkeySceneAssets[0]);
 
-        [MenuItem(cMenuPath + "Scene 1 #1")]
+        [MenuItem(cMenuPath + "Scene 1 %#1")]
         private static void OpenScene1() => LoadScene(Data.HotkeySceneAssets[1]);
 
-        [MenuItem(cMenuPath + "Scene 2 #2")]
+        [MenuItem(cMenuPath + "Scene 2 %#2")]
         private static void OpenScene2() => LoadScene(Data.HotkeySceneAssets[2]);
 
-        [MenuItem(cMenuPath + "Scene 3 #3")]
+        [MenuItem(cMenuPath + "Scene 3 %#3")]
         private static void OpenScene3() => LoadScene(Data.HotkeySceneAssets[3]);
 
-        [MenuItem(cMenuPath + "Scene 4 #4")]
+        [MenuItem(cMenuPath + "Scene 4 %#4")]
         private static void OpenScene4() => LoadScene(Data.HotkeySceneAssets[4]);
 
-        [MenuItem(cMenuPath + "Scene 5 #5")]
+        [MenuItem(cMenuPath + "Scene 5 %#5")]
         private static void OpenScene5() => LoadScene(Data.HotkeySceneAssets[5]);
 
-        [MenuItem(cMenuPath + "Scene 6 #6")]
+        [MenuItem(cMenuPath + "Scene 6 %#6")]
         private static void OpenScene6() => LoadScene(Data.HotkeySceneAssets[6]);
 
-        [MenuItem(cMenuPath + "Scene 7 #7")]
+        [MenuItem(cMenuPath + "Scene 7 %#7")]
         private static void OpenScene7() => LoadScene(Data.HotkeySceneAssets[7]);
 
-        [MenuItem(cMenuPath + "Scene 8 #8")]
+        [MenuItem(cMenuPath + "Scene 8 %#8")]
         private static void OpenScene8() => LoadScene(Data.HotkeySceneAssets[8]);
 
-        [MenuItem(cMenuPath + "Scene 9 #9")]
+        [MenuItem(cMenuPath + "Scene 9 %#9")]
         private static void OpenScene9() => LoadScene(Data.HotkeySceneAssets[9]);
 
         private static void LoadScene(SceneAsset scene)
         {
+            if (EditorApplication.isPlaying) return;
             if (Data.HotkeySceneAssets.Length < 1) return;
             if (scene is null) return;
             bool hasSaved = EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
