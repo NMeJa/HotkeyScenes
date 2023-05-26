@@ -14,3 +14,6 @@ Fixed BUG!
 
 ### Fixed
 Fixed Bug. When asking for saving scene changes if pressed cancel it would still go to the different scene.
+
+## [1.0.5] -2023-05-26
+Added Toggle for usage in Playmode. If you don't want to use it in playmode. you can toggle the flag. "Tools/NMJ/SceneManager/Hotkeys/OnlyEditMode", "Tools/NMJ/SceneManager/Hotkeys/EveryWhere"
